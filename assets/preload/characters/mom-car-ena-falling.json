@@ -1,0 +1,146 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				60,
+				-40
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "land",
+			"indices": [],
+			"name": "land"
+		},
+		{
+			"offsets": [
+				-2,
+				-6
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singLEFT-loop",
+			"indices": [],
+			"name": "singLEFTLOOP"
+		},
+		{
+			"offsets": [
+				-102,
+				-46
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singRIGHT-loop",
+			"indices": [],
+			"name": "singRIGHTLOOP"
+		},
+		{
+			"offsets": [
+				-32,
+				104
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singUP-loop",
+			"indices": [],
+			"name": "singUPLOOP"
+		},
+		{
+			"offsets": [
+				-82,
+				-86
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "singDOWN-loop",
+			"indices": [],
+			"name": "singDOWNLOOP"
+		},
+		{
+			"offsets": [
+				-2,
+				-6
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "singLEFT0"
+		},
+		{
+			"offsets": [
+				-82,
+				-86
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "singDOWN0"
+		},
+		{
+			"offsets": [
+				-102,
+				-46
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "singRIGHT0"
+		},
+		{
+			"offsets": [
+				-32,
+				104
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "singUP0"
+		},
+		{
+			"offsets": [
+				-7,
+				12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "into fall",
+			"indices": [],
+			"name": "Mom into fall"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/momCar-Ena-falling",
+	"position": [
+		-90,
+		-30
+	],
+	"renderimage": "mom-ena",
+	"rendername": "mommy mearest",
+	"healthicon": "mom-ena",
+	"flip_x": false,
+	"healthbar_colors": [
+		51,
+		103,
+		254
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

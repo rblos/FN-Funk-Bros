@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="menu_smash.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="smash basic0000" x="0" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0001" x="0" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0002" x="0" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0003" x="410" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0004" x="410" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0005" x="410" y="0" width="400" height="128"/>
+	<SubTexture name="smash basic0006" x="0" y="138" width="400" height="128"/>
+	<SubTexture name="smash basic0007" x="0" y="138" width="400" height="128"/>
+	<SubTexture name="smash basic0008" x="0" y="138" width="400" height="128"/>
+	<SubTexture name="smash white0000" x="410" y="138" width="511" height="174"/>
+	<SubTexture name="smash white0001" x="0" y="322" width="511" height="174"/>
+	<SubTexture name="smash white0002" x="0" y="506" width="511" height="174"/>
+</TextureAtlas>

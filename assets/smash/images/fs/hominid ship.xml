@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="hominid ship.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="hominid ship0000" x="0" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0001" x="0" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0002" x="1193" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0003" x="1193" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0004" x="2386" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0005" x="2386" y="0" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0006" x="0" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0007" x="0" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0008" x="1193" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0009" x="1193" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0010" x="2386" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0011" x="2386" y="1282" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0012" x="0" y="2564" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0013" x="0" y="2564" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0014" x="1193" y="2564" width="1183" height="1272"/>
+	<SubTexture name="hominid ship0015" x="1193" y="2564" width="1183" height="1272"/>
+</TextureAtlas>

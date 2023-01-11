@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="momCar-Ena-falling.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Mom into fall0000" x="0" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0001" x="576" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0002" x="1152" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0003" x="1728" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0004" x="2304" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0005" x="2880" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0006" x="3456" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0007" x="4032" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0008" x="2304" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0009" x="2880" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0010" x="4608" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0011" x="5184" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0012" x="5760" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0013" x="6336" y="0" width="566" height="840"/>
+	<SubTexture name="Mom into fall0014" x="6912" y="0" width="566" height="840"/>
+	<SubTexture name="idle0000" x="7488" y="0" width="581" height="837"/>
+	<SubTexture name="idle0001" x="0" y="850" width="581" height="837"/>
+	<SubTexture name="idle0002" x="591" y="850" width="581" height="837"/>
+	<SubTexture name="idle0003" x="1182" y="850" width="581" height="837"/>
+	<SubTexture name="land0000" x="1773" y="850" width="676" height="816"/>
+	<SubTexture name="land0001" x="2459" y="850" width="676" height="816"/>
+	<SubTexture name="land0002" x="3145" y="850" width="676" height="816"/>
+	<SubTexture name="land0003" x="3831" y="850" width="676" height="816"/>
+	<SubTexture name="land0004" x="4517" y="850" width="676" height="816"/>
+	<SubTexture name="land0005" x="5203" y="850" width="676" height="816"/>
+	<SubTexture name="land0006" x="5889" y="850" width="676" height="816"/>
+	<SubTexture name="land0007" x="6575" y="850" width="676" height="816"/>
+	<SubTexture name="land0008" x="7261" y="850" width="676" height="816"/>
+	<SubTexture name="land0009" x="0" y="1697" width="676" height="816"/>
+	<SubTexture name="land0010" x="686" y="1697" width="676" height="816"/>
+	<SubTexture name="land0011" x="1372" y="1697" width="676" height="816"/>
+	<SubTexture name="land0012" x="2058" y="1697" width="676" height="816"/>
+	<SubTexture name="land0013" x="2744" y="1697" width="676" height="816"/>
+	<SubTexture name="land0014" x="3430" y="1697" width="676" height="816"/>
+	<SubTexture name="land0015" x="4116" y="1697" width="676" height="816"/>
+	<SubTexture name="land0016" x="4802" y="1697" width="676" height="816"/>
+	<SubTexture name="land0017" x="5488" y="1697" width="676" height="816"/>
+	<SubTexture name="singDOWN0000" x="6174" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0001" x="6600" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0002" x="7026" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0003" x="7452" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0004" x="0" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWN0005" x="426" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWN0006" x="7026" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0007" x="7452" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0008" x="0" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWN0009" x="426" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWN0010" x="7026" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0011" x="7452" y="1697" width="416" height="796"/>
+	<SubTexture name="singDOWN0012" x="0" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWN0013" x="426" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWNLOOP0000" x="852" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWNLOOP0001" x="1278" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWNLOOP0002" x="1704" y="2523" width="416" height="796"/>
+	<SubTexture name="singDOWNLOOP0003" x="2130" y="2523" width="416" height="796"/>
+	<SubTexture name="singLEFT0000" x="2556" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0001" x="3070" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0002" x="3584" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0003" x="4098" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0004" x="4612" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0005" x="5126" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0006" x="3584" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0007" x="4098" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0008" x="4612" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0009" x="5126" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0010" x="3584" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0011" x="4098" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0012" x="4612" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFT0013" x="5126" y="2523" width="504" height="840"/>
+	<SubTexture name="singLEFTLOOP0000" x="5640" y="2523" width="497" height="840"/>
+	<SubTexture name="singLEFTLOOP0001" x="6147" y="2523" width="497" height="840"/>
+	<SubTexture name="singLEFTLOOP0002" x="6654" y="2523" width="497" height="840"/>
+	<SubTexture name="singLEFTLOOP0003" x="7161" y="2523" width="497" height="840"/>
+	<SubTexture name="singRIGHT0000" x="0" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0001" x="649" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0002" x="1298" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0003" x="1947" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0004" x="2596" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0005" x="3245" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0006" x="1298" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0007" x="1947" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0008" x="2596" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0009" x="3245" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0010" x="1298" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0011" x="1947" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0012" x="2596" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHT0013" x="3245" y="3373" width="639" height="797"/>
+	<SubTexture name="singRIGHTLOOP0000" x="3894" y="3373" width="637" height="792"/>
+	<SubTexture name="singRIGHTLOOP0001" x="4541" y="3373" width="637" height="792"/>
+	<SubTexture name="singRIGHTLOOP0002" x="5188" y="3373" width="637" height="792"/>
+	<SubTexture name="singRIGHTLOOP0003" x="5835" y="3373" width="637" height="792"/>
+	<SubTexture name="singUP0000" x="6482" y="3373" width="429" height="932"/>
+	<SubTexture name="singUP0001" x="6921" y="3373" width="429" height="932"/>
+	<SubTexture name="singUP0002" x="7360" y="3373" width="429" height="932"/>
+	<SubTexture name="singUP0003" x="0" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0004" x="439" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0005" x="878" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0006" x="7360" y="3373" width="429" height="932"/>
+	<SubTexture name="singUP0007" x="0" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0008" x="439" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0009" x="878" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0010" x="7360" y="3373" width="429" height="932"/>
+	<SubTexture name="singUP0011" x="0" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0012" x="439" y="4315" width="429" height="932"/>
+	<SubTexture name="singUP0013" x="878" y="4315" width="429" height="932"/>
+	<SubTexture name="singUPLOOP0000" x="1317" y="4315" width="429" height="931"/>
+	<SubTexture name="singUPLOOP0001" x="1756" y="4315" width="429" height="931"/>
+	<SubTexture name="singUPLOOP0002" x="2195" y="4315" width="429" height="931"/>
+	<SubTexture name="singUPLOOP0003" x="2634" y="4315" width="429" height="931"/>
+</TextureAtlas>

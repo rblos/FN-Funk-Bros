@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="imagisphere2.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="imagisphere20000" x="0" y="0" width="922" height="714"/>
+	<SubTexture name="imagisphere20001" x="932" y="0" width="922" height="714"/>
+	<SubTexture name="imagisphere20002" x="1864" y="0" width="922" height="714"/>
+	<SubTexture name="imagisphere20003" x="2796" y="0" width="922" height="714"/>
+	<SubTexture name="imagisphere20004" x="0" y="724" width="922" height="714"/>
+	<SubTexture name="imagisphere20005" x="932" y="724" width="922" height="714"/>
+	<SubTexture name="imagisphere20006" x="1864" y="724" width="922" height="714"/>
+	<SubTexture name="imagisphere20007" x="2796" y="724" width="922" height="714"/>
+	<SubTexture name="imagisphere20008" x="0" y="1448" width="922" height="714"/>
+	<SubTexture name="imagisphere20009" x="932" y="1448" width="922" height="714"/>
+	<SubTexture name="imagisphere20010" x="1864" y="1448" width="922" height="714"/>
+	<SubTexture name="imagisphere20011" x="2796" y="1448" width="922" height="714"/>
+	<SubTexture name="imagisphere20012" x="0" y="2172" width="922" height="714"/>
+	<SubTexture name="imagisphere20013" x="932" y="2172" width="922" height="714"/>
+	<SubTexture name="imagisphere20014" x="1864" y="2172" width="922" height="714"/>
+	<SubTexture name="imagisphere20015" x="2796" y="2172" width="922" height="714"/>
+	<SubTexture name="imagisphere20016" x="0" y="2896" width="922" height="714"/>
+	<SubTexture name="imagisphere20017" x="932" y="2896" width="922" height="714"/>
+	<SubTexture name="imagisphere20018" x="1864" y="2896" width="922" height="714"/>
+	<SubTexture name="imagisphere20019" x="2796" y="2896" width="922" height="714"/>
+</TextureAtlas>

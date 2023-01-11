@@ -1,0 +1,25 @@
+{
+	"storyName": "FUNKBROS! DEMO",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"pico",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Fourside",
+			"pico-lucas",
+			[
+				40,
+				40,
+				60
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Week 9"
+}

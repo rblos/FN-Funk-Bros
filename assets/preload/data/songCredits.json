@@ -1,0 +1,32 @@
+{
+	"doSongCards": true,
+	"songs": [
+		{
+			"song": ["tutorial",
+				"bopeebo", "fresh", "dad battle", 
+				"spookeez", "south", 
+				"pico", "philly nice", "blammed",
+				"satin panties", "high", "milf",
+				"cocoa", "eggnog",
+				"senpai", "roses", "thorns",
+				"ugh", "guns", "stress"],
+			"musician": "Kawai Sprite",
+			"isRemix": false
+		},
+		{
+			"song": ["monster", "winter horrorland"],
+			"musician": "BassetFilms",
+			"isRemix": false
+		},
+		{
+			"song": ["fourside"],
+			"musician": "derpling",
+			"isRemix": true
+		},
+		{
+			"song": ["paradise", "soaring", "bubblefum", "wheat", "freefone"],
+			"musician": "derpling",
+			"isRemix": false
+		}
+		]
+}

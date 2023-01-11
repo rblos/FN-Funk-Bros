@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="YellowPlane.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Yellow Plane0000" x="0" y="0" width="3908" height="1137"/>
+	<SubTexture name="Yellow Plane0001" x="0" y="1147" width="3908" height="1137"/>
+	<SubTexture name="Yellow Plane0002" x="0" y="2294" width="3908" height="1137"/>
+</TextureAtlas>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="circle_image.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="awards0000" x="0" y="0" width="337" height="337"/>
+	<SubTexture name="awards0001" x="347" y="0" width="337" height="337"/>
+	<SubTexture name="awards0002" x="694" y="0" width="337" height="337"/>
+	<SubTexture name="awards0003" x="1041" y="0" width="337" height="337"/>
+	<SubTexture name="credits0000" x="1388" y="0" width="337" height="337"/>
+	<SubTexture name="credits0001" x="0" y="347" width="337" height="337"/>
+	<SubTexture name="credits0002" x="347" y="347" width="337" height="337"/>
+	<SubTexture name="credits0003" x="694" y="347" width="337" height="337"/>
+	<SubTexture name="donate0000" x="1041" y="347" width="337" height="337"/>
+	<SubTexture name="donate0001" x="1388" y="347" width="337" height="337"/>
+	<SubTexture name="donate0002" x="0" y="694" width="337" height="337"/>
+	<SubTexture name="donate0003" x="347" y="694" width="337" height="337"/>
+	<SubTexture name="freeplay0000" x="694" y="694" width="337" height="337"/>
+	<SubTexture name="freeplay0001" x="1041" y="694" width="337" height="337"/>
+	<SubTexture name="freeplay0002" x="1388" y="694" width="337" height="337"/>
+	<SubTexture name="freeplay0003" x="0" y="1041" width="337" height="337"/>
+	<SubTexture name="options0000" x="347" y="1041" width="337" height="337"/>
+	<SubTexture name="options0001" x="694" y="1041" width="337" height="337"/>
+	<SubTexture name="options0002" x="1041" y="1041" width="337" height="337"/>
+	<SubTexture name="options0003" x="1388" y="1041" width="337" height="337"/>
+	<SubTexture name="smash0000" x="0" y="1388" width="337" height="337"/>
+	<SubTexture name="smash0001" x="347" y="1388" width="337" height="337"/>
+	<SubTexture name="smash0002" x="694" y="1388" width="337" height="337"/>
+	<SubTexture name="smash0003" x="1041" y="1388" width="337" height="337"/>
+</TextureAtlas>

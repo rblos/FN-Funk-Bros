@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="block_gradients.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="awards gradient0000" x="0" y="0" width="826" height="528"/>
+	<SubTexture name="awards gradient0001" x="836" y="0" width="826" height="528"/>
+	<SubTexture name="awards gradient0002" x="1672" y="0" width="826" height="528"/>
+	<SubTexture name="awards gradient0003" x="2508" y="0" width="826" height="528"/>
+	<SubTexture name="awards gradient0004" x="0" y="538" width="826" height="528"/>
+	<SubTexture name="awards gradient0005" x="0" y="538" width="826" height="528"/>
+	<SubTexture name="awards gradient0006" x="836" y="538" width="826" height="528"/>
+	<SubTexture name="credits gradient0000" x="1672" y="538" width="853" height="342"/>
+	<SubTexture name="credits gradient0001" x="2535" y="538" width="853" height="342"/>
+	<SubTexture name="credits gradient0002" x="0" y="1076" width="853" height="342"/>
+	<SubTexture name="credits gradient0003" x="863" y="1076" width="853" height="342"/>
+	<SubTexture name="credits gradient0004" x="1726" y="1076" width="853" height="342"/>
+	<SubTexture name="credits gradient0005" x="1726" y="1076" width="853" height="342"/>
+	<SubTexture name="credits gradient0006" x="2589" y="1076" width="853" height="342"/>
+	<SubTexture name="donate gradient0000" x="3452" y="1076" width="289" height="114"/>
+	<SubTexture name="donate gradient0001" x="3751" y="1076" width="289" height="114"/>
+	<SubTexture name="donate gradient0002" x="0" y="1428" width="289" height="114"/>
+	<SubTexture name="donate gradient0003" x="299" y="1428" width="289" height="114"/>
+	<SubTexture name="donate gradient0004" x="598" y="1428" width="289" height="114"/>
+	<SubTexture name="freeplay gradient0000" x="897" y="1428" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0001" x="1744" y="1428" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0002" x="2591" y="1428" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0003" x="0" y="1931" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0004" x="847" y="1931" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0005" x="847" y="1931" width="837" height="493"/>
+	<SubTexture name="freeplay gradient0006" x="1694" y="1931" width="837" height="493"/>
+	<SubTexture name="options gradient0000" x="2541" y="1931" width="664" height="492"/>
+	<SubTexture name="options gradient0001" x="3215" y="1931" width="664" height="492"/>
+	<SubTexture name="options gradient0002" x="0" y="2434" width="664" height="492"/>
+	<SubTexture name="options gradient0003" x="674" y="2434" width="664" height="492"/>
+	<SubTexture name="options gradient0004" x="1348" y="2434" width="664" height="492"/>
+	<SubTexture name="options gradient0005" x="1348" y="2434" width="664" height="492"/>
+	<SubTexture name="options gradient0006" x="2022" y="2434" width="664" height="492"/>
+	<SubTexture name="smash gradient0000" x="2696" y="2434" width="838" height="449"/>
+	<SubTexture name="smash gradient0001" x="0" y="2936" width="838" height="449"/>
+	<SubTexture name="smash gradient0002" x="848" y="2936" width="838" height="449"/>
+	<SubTexture name="smash gradient0003" x="1696" y="2936" width="838" height="449"/>
+	<SubTexture name="smash gradient0004" x="2544" y="2936" width="838" height="449"/>
+	<SubTexture name="smash gradient0005" x="2544" y="2936" width="838" height="449"/>
+	<SubTexture name="smash gradient0006" x="0" y="3395" width="838" height="449"/>
+</TextureAtlas>

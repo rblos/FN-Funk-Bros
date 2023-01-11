@@ -1,0 +1,190 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-31
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bf fall RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-33,
+				-1
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bf fall UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-21,
+				-54
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bf fall DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				15,
+				-30
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bf fall LEFT0",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-40,
+				-31
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "bf fall RIGHTLOOP",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-21,
+				-54
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "bf fall DOWNLOOP",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-33,
+				-1
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "bf fall UPLOOP",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				15,
+				-30
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "bf fall LEFTLOOP",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				9
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "bf fall RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-19,
+				-44
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "bf fall DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-34,
+				15
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "bf fall UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				6
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "bf fall LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-50
+			],
+			"anim": "land",
+			"fps": 24,
+			"name": "bf land",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bf defalt fall",
+			"indices": []
+		},
+		{
+			"offsets": [
+				51,
+				10
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "into fall",
+			"loop": false,
+			"name": "bf into fall"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfCar-falling",
+	"position": [
+		-10,
+		330
+	],
+	"renderimage": "bf",
+	"rendername": "boyfriend",
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

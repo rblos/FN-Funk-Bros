@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="imagisphere4.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="imagisphere40000" x="0" y="0" width="779" height="462"/>
+	<SubTexture name="imagisphere40001" x="789" y="0" width="779" height="462"/>
+	<SubTexture name="imagisphere40002" x="1578" y="0" width="779" height="462"/>
+	<SubTexture name="imagisphere40003" x="2367" y="0" width="779" height="462"/>
+	<SubTexture name="imagisphere40004" x="3156" y="0" width="779" height="462"/>
+	<SubTexture name="imagisphere40005" x="0" y="472" width="779" height="462"/>
+	<SubTexture name="imagisphere40006" x="789" y="472" width="779" height="462"/>
+	<SubTexture name="imagisphere40007" x="1578" y="472" width="779" height="462"/>
+	<SubTexture name="imagisphere40008" x="2367" y="472" width="779" height="462"/>
+	<SubTexture name="imagisphere40009" x="3156" y="472" width="779" height="462"/>
+	<SubTexture name="imagisphere40010" x="0" y="944" width="779" height="462"/>
+	<SubTexture name="imagisphere40011" x="789" y="944" width="779" height="462"/>
+	<SubTexture name="imagisphere40012" x="1578" y="944" width="779" height="462"/>
+	<SubTexture name="imagisphere40013" x="2367" y="944" width="779" height="462"/>
+	<SubTexture name="imagisphere40014" x="3156" y="944" width="779" height="462"/>
+	<SubTexture name="imagisphere40015" x="0" y="1416" width="779" height="462"/>
+	<SubTexture name="imagisphere40016" x="789" y="1416" width="779" height="462"/>
+	<SubTexture name="imagisphere40017" x="1578" y="1416" width="779" height="462"/>
+	<SubTexture name="imagisphere40018" x="2367" y="1416" width="779" height="462"/>
+	<SubTexture name="imagisphere40019" x="3156" y="1416" width="779" height="462"/>
+</TextureAtlas>

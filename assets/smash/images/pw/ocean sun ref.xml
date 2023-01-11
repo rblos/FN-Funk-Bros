@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="ocean sun ref.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="ocean sun ref0000" x="0" y="0" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0001" x="0" y="0" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0002" x="1022" y="0" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0003" x="1022" y="0" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0004" x="0" y="470" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0005" x="0" y="470" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0006" x="1022" y="0" width="1012" height="460"/>
+	<SubTexture name="ocean sun ref0007" x="1022" y="0" width="1012" height="460"/>
+</TextureAtlas>
