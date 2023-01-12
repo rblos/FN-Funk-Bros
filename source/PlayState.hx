@@ -5873,7 +5873,6 @@ class PlayState extends MusicBeatState
 				Actuate.tween(gPlane.scale, 3.0, {x: 0.25, y: 0.25}).ease(Quad.easeInOut);
 
 				trace(boyfriend.animation.curAnim.name);
-				funkBrosTimer = new FlxTimer().start(0, function(tmr:FlxTimer) {
 				triggerEventNote("Change Character", "0", SONG.player1 + "-falling");
 				triggerEventNote("Change Character", "1", SONG.player2 + "-falling");
 
@@ -5886,7 +5885,6 @@ class PlayState extends MusicBeatState
 					dad.playAnim('into fall', true);
 					dad.specialAnim = true;
 				}
-				});
 
 				var planeTEMP:FlxSound;
 				planeTEMP = FlxG.sound.load(Paths.sound('smash/pw-' + curPlane + 'plane-loop'), planeA.volume, true, soundGroup).play(false, planeA.time).fadeOut(2, 0, function(twn:FlxTween) {
@@ -5916,13 +5914,22 @@ class PlayState extends MusicBeatState
 				planeA = FlxG.sound.load(Paths.sound('smash/pw-' + newCur + 'plane-loop'), 0, true, soundGroup);
 				planeA.play();
 				planeA.fadeIn(3, 0, 0.2);
+
+				bgSky.forEach(function(spr:BGSprite) {
+					spr.active = true;
+					spr.acceleration.y = -100;
+				});
+				bgIslands.forEach(function(spr:BGSprite) {
+					spr.active = true;
+					spr.acceleration.y = -100;
+				});
+				bgClouds.forEach(function(spr:BGSprite) {
+					spr.active = true;
+					spr.acceleration.y = -100;
+				});
 	
 				funkBrosTimer = new FlxTimer().start(2.5, function(tmr:FlxTimer) 
 				{
-					Actuate.tween(cPlane, 2.0, {y: valY}).ease(Expo.easeOut).onComplete(function(twn:FlxTween)
-					{
-						defaultCamZoom += 0.05;
-					});
 					funkBrosTimer = new FlxTimer().start(1, function(tmr:FlxTimer) {
 						canPlaneSwap = true;
 						planeFalling = false;
@@ -5944,6 +5951,11 @@ class PlayState extends MusicBeatState
 	
 						FlxG.sound.play(Paths.sound('smash/landMetal'));
 						FlxG.camera.shake(0.008, 0.2);
+					});
+					
+					Actuate.tween(cPlane, 2.0, {y: valY}).ease(Expo.easeOut).onComplete(function(twn:FlxTween)
+					{
+						defaultCamZoom += 0.05;
 					});
 				});
 			});

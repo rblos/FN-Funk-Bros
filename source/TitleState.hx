@@ -692,7 +692,7 @@ class TitleState extends MusicBeatState
 	{
 		super.stepHit();
 
-		if (curStep % 4 == 0) 
+		if (curStep % 8 == 3) 
 		{
 			if(logoBl != null)
 				logoBl.animation.play('bump', true);
