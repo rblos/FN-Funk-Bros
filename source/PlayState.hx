@@ -1040,7 +1040,7 @@ class PlayState extends MusicBeatState
 				ocean.shader = wiggleEffect.shader;
 
 				var oceanRef = new BGSprite('pw/ocean sun ref', -160, 1500, 0.7, 0.7, ["ocean sun ref"], true);
-				oceanRef.setPosition(ocean.x + ocean.width/2 - oceanRef.width/2, ocean.y + 70);
+				oceanRef.setPosition(ocean.x + ocean.width/2 - oceanRef.width/2, ocean.y + 90);
 				bgSky.add(oceanRef);
 
 				add(bgSky);
@@ -1068,16 +1068,6 @@ class PlayState extends MusicBeatState
 					curPlane = "red";
 				}
 
-				if (FileSystem.exists(Paths.getPreloadPath('shared/images/characters/' + SONG.player1 + '-falling.png'))) {
-					Paths.getSparrowAtlas('characters/' + SONG.player1 + '-falling');
-					precacheList.set('characters/' + SONG.player1 + '-falling', 'image');
-				}
-
-				if (FileSystem.exists(Paths.getPreloadPath('shared/images/characters/' + SONG.player2 + '-falling.png'))) {
-					Paths.getSparrowAtlas('characters/' + SONG.player2 + '-falling');
-					precacheList.set('characters/' + SONG.player2 + '-falling', 'image');
-				}
-
 				precacheList.set('smash/pw-ambience', 'sound');
 				precacheList.set('smash/pw-yellowplane-loop', 'sound');
 				precacheList.set('smash/pw-redplane-loop', 'sound');
@@ -1087,7 +1077,6 @@ class PlayState extends MusicBeatState
 				camGame.flashSprite.scaleY = 2;
 				defaultCamZoom /= 2;
 				camZoomingMult /= 2;
-				camGame.flashSprite.shader = wiggleEffect.shader;
 
 			case 'finalDestination':
 				sky = new BGSprite('fd/sky', -1380, -570, 0.4, 0.4);
@@ -1341,13 +1330,16 @@ class PlayState extends MusicBeatState
 
 			case 'pilotwings':
 				if (FileSystem.exists(Paths.getPreloadPath('shared/images/' + boyfriend.imageFile + '-falling.png'))) {
-					Paths.getSparrowAtlas(boyfriend.imageFile + '-falling');
-					precacheList.set(boyfriend.imageFile + '-falling', 'image');
+					//Paths.getSparrowAtlas(boyfriend.imageFile + '-falling');
+					addCharacterToList(boyfriend.curCharacter + "-falling", 0);
+					//precacheList.set(boyfriend.imageFile + '-falling', 'image');
+					trace('lol');
 				}
 
 				if (FileSystem.exists(Paths.getPreloadPath('shared/images/' + dad.imageFile + '-falling.png'))) {
-					Paths.getSparrowAtlas(dad.imageFile + '-falling');
-					precacheList.set(dad.imageFile + '-falling', 'image');
+					//Paths.getSparrowAtlas(dad.imageFile + '-falling');
+					addCharacterToList(dad.curCharacter + "-falling", 1);
+					//precacheList.set(dad.imageFile + '-falling', 'image');
 				}
 
 				planeA = FlxG.sound.load(Paths.sound('smash/pw-' + curPlane + 'plane-loop'), 0, true, soundGroup);
@@ -1361,7 +1353,6 @@ class PlayState extends MusicBeatState
 				//evilTrail.flipX = true;
 				//evilTrail.scale.set(Std.int(evilTrail.width), Std.int(evilTrail.height*-1));
 				evilTrail.offset.y -= boyfriend.height;
-				evilTrail.angle = 180;
 				addBehindBF(evilTrail);
 		}
 
@@ -3105,7 +3096,7 @@ class PlayState extends MusicBeatState
 				return 280; //Plays 280ms before the actual position
 
 			case 'Plane Swap':
-				return 6.25 * 1000;
+				//return 1.5 * 1000;
 		}
 		return 0;
 	}
@@ -3605,6 +3596,14 @@ class PlayState extends MusicBeatState
 						triggerEventNote("Change Character", "0", SONG.player1);
 					if (dad.curCharacter == SONG.player2 + "-falling" && dad.animation.curAnim.name.startsWith('sing'))
 						triggerEventNote("Change Character", "1", SONG.player2);
+
+					var bgElements = [bgSky, bgIslands, bgClouds, foregroundSprites];
+					for(group in bgElements) {
+						group.forEach(function(spr:BGSprite) {
+							if (sky.y < -1440)
+								spr.y += 1;
+						});
+					}
 				}
 				else {
 					
@@ -3755,29 +3754,11 @@ class PlayState extends MusicBeatState
 						spr.kill();
 					}
 				});
-
-				//move sky while falling
-				if (boyfriend.curCharacter == SONG.player1 + "-falling" && boyfriend.animation.curAnim.name != 'land' || 
-					dad.curCharacter == SONG.player2 + "-falling" && dad.animation.curAnim.name != 'land') 
-				{
-					if (!(sky.y < -1800))
-					{
-						//sun.y -= pvelocity;
-						//sky.y -= pvelocity;
-					}
-				}
-				else
-				{
-					if (sky.y <= -940)
-					{
-						//sun.y += 2;
-						//sky.y += 2;
-						//pvelocity = 0;
-					}
-				}
 				wiggleEffect.update(elapsed);
+
 			case 'finalDestination':
 				wiggleEffect.update(elapsed);
+
 			case 'fourside':
 				lights1.alpha -= (Conductor.crochet / 1000) * FlxG.elapsed * 2.5;
 				lights2.alpha -= (Conductor.crochet / 1000) * FlxG.elapsed * 2.5;
@@ -5894,10 +5875,24 @@ class PlayState extends MusicBeatState
 				if (planeA != null)
 					planeA.kill();
 
+				var bgElements = [bgSky, bgIslands, bgClouds, foregroundSprites];
+
 				funkBrosTimer = new FlxTimer().start(0.5, function(tmr:FlxTimer) {
 					var biplane:FlxSound = FlxG.sound.load(Paths.sound('smash/biplane1'), 0.8, false, soundGroup);
 					biplane.play();
 					biplane.fadeOut(2, 0.1);
+
+					for (group in bgElements) {
+						group.forEach(function(spr:BGSprite) {
+							spr.active = true;
+							spr.velocity.y -= 100;
+
+							if (group == bgSky || group == bgClouds) {
+								spr.velocity.y = 0;
+								spr.acceleration.y -= 100;
+							}
+					});
+				}
 				});
 
 				Actuate.tween(gPlane, 3.0, {x: -4000, y: -3000}).ease(Quad.easeInOut).onComplete(function(twn:FlxTween)
@@ -5914,19 +5909,6 @@ class PlayState extends MusicBeatState
 				planeA = FlxG.sound.load(Paths.sound('smash/pw-' + newCur + 'plane-loop'), 0, true, soundGroup);
 				planeA.play();
 				planeA.fadeIn(3, 0, 0.2);
-
-				bgSky.forEach(function(spr:BGSprite) {
-					spr.active = true;
-					spr.acceleration.y = -100;
-				});
-				bgIslands.forEach(function(spr:BGSprite) {
-					spr.active = true;
-					spr.acceleration.y = -100;
-				});
-				bgClouds.forEach(function(spr:BGSprite) {
-					spr.active = true;
-					spr.acceleration.y = -100;
-				});
 	
 				funkBrosTimer = new FlxTimer().start(2.5, function(tmr:FlxTimer) 
 				{
@@ -5950,7 +5932,18 @@ class PlayState extends MusicBeatState
 							triggerEventNote("Change Character", "1", SONG.player2);
 	
 						FlxG.sound.play(Paths.sound('smash/landMetal'));
-						FlxG.camera.shake(0.008, 0.2);
+						FlxG.camera.shake(0.04, 0.2);
+
+						for (group in bgElements) {
+							group.forEach(function(spr:BGSprite) {
+								spr.velocity.y += 100;
+								//spr.acceleration.y = 0;
+								if (group == bgSky || group == bgClouds) {
+									spr.velocity.y = 0;
+									spr.acceleration.y = 0;
+								}
+							});
+						}
 					});
 					
 					Actuate.tween(cPlane, 2.0, {y: valY}).ease(Expo.easeOut).onComplete(function(twn:FlxTween)
