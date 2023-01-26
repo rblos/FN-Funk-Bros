@@ -692,7 +692,7 @@ class TitleState extends MusicBeatState
 	{
 		super.stepHit();
 
-		if (curStep % 8 == 3) 
+		if (curStep % 8 == 5) 
 		{
 			if(logoBl != null)
 				logoBl.animation.play('bump', true);
@@ -747,10 +747,10 @@ class TitleState extends MusicBeatState
 					#if PSYCH_WATERMARKS
 					createCoolText(['Not associated', 'with'], -40);
 					#else
-					createCoolText(['Team'], -40);
+					createCoolText(['L.A.R.R.D'], -40);
 					#end
 				case 22:
-					addMoreText('L.A.R.R.D', -40);
+					addMoreText('Team', -40);
 					ngSpr.visible = true;
 				// credTextShit.text += '\nNewgrounds';
 				case 24:

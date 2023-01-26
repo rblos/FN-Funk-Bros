@@ -1,0 +1,34 @@
+{
+	"storyName": "FUNKBROS! DEMO",
+	"hideFreeplay": false,
+	"weekBackground": "philly",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"pico",
+		"bf",
+		"gf"
+	],
+	"songs": [
+[
+			"Wheat",
+			"mom",
+			[
+				255,
+				153,
+				173
+			]
+		],
+		[
+			"Fourside",
+			"pico-lucas",
+			[
+				40,
+				40,
+				60
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Smash2"
+}

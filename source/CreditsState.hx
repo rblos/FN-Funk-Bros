@@ -81,12 +81,12 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			["Team L.A.R.R.D"],
+			["L.A.R.R.D Team"],
 			['derpling',			'derpling',			'Musician, Artist, Charter',									'',										'46A348'],
 			['rblox',				'rblox',			'Coder, Artist, Charter',										'',										'ED003D'],
 			['rectangle',			'rectangle',		'Musician, Artist, Charter',									'',										'9966FF'],
 			['YourPalLoops',		'loops',			'Charter',														'',										'FFE346'],
-			['Arctic',				'arctic',			'UI Designer, Charter',											'',										'93C8FF'],
+			['Arctic',				'arctic',			'Musician, UI Concepts, Charter',											'',										'93C8FF'],
 			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],

@@ -1353,7 +1353,7 @@ class PlayState extends MusicBeatState
 				//evilTrail.flipX = true;
 				//evilTrail.scale.set(Std.int(evilTrail.width), Std.int(evilTrail.height*-1));
 				evilTrail.offset.y -= boyfriend.height;
-				addBehindBF(evilTrail);
+				//addBehindBF(evilTrail);
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue
@@ -1525,6 +1525,10 @@ class PlayState extends MusicBeatState
 		smashBarBG.antialiasing = ClientPrefs.globalAntialiasing;
 		smashBarBG.visible = !ClientPrefs.hideHud;
 		smashBarBG.alpha = ClientPrefs.healthBarAlpha;
+		if(ClientPrefs.downScroll) {
+			smashBarBG.y = 0.09 * FlxG.height;
+			smashBarBG.flipY = true;
+		}
 
 		smashBar1 = new FlxBar(smashBarBG.x + 11.5, smashBarBG.y + 5, RIGHT_TO_LEFT, Std.int(smashBarBG.width/2 - 24), Std.int(smashBarBG.height - 8), this, 'barHealth1', 0, 1);
 		smashBar2 = new FlxBar(smashBarBG.x + smashBarBG.width/2 + 13, smashBar1.y, RIGHT_TO_LEFT, smashBar1.barWidth, smashBar1.barHeight, this, 'barHealth2', 0, 1);
@@ -1541,6 +1545,10 @@ class PlayState extends MusicBeatState
 		nameTag2.visible = !ClientPrefs.hideHud;
 		nameTag2.alpha = ClientPrefs.healthBarAlpha;
 		add(nameTag2);
+		if(ClientPrefs.downScroll) {
+			nameTag2.y = smashBarBG.y + smashBarBG.height;
+			nameTag2.x -= 40;
+		}
 
 		nameTag1 = new FlxSprite(smashBarBG.x + smashBarBG.width - nameTag2.width + 25, nameTag2.y).loadGraphic(Paths.image('nametag'));
 		nameTag1.color = p1Color;
@@ -1549,6 +1557,7 @@ class PlayState extends MusicBeatState
 		nameTag1.visible = !ClientPrefs.hideHud;
 		nameTag1.alpha = ClientPrefs.healthBarAlpha;
 		add(nameTag1);
+		if(ClientPrefs.downScroll) nameTag1.x += 40;
 
 		var tempname = (boyfriend.renderName != null) ? boyfriend.renderName.toUpperCase() : "FACE";
 		nameP1 = new FlxText(0, 0, tempname, 20);
@@ -1586,9 +1595,10 @@ class PlayState extends MusicBeatState
 		renderSqr1.visible = !ClientPrefs.hideHud;
 		renderSqr1.alpha = ClientPrefs.healthBarAlpha;
 		add(renderSqr1);
+		if(ClientPrefs.downScroll) renderSqr1.y = nameTag1.y - nameTag1.height/2 - renderSqr1.height/2 + 15;
 
 		renderSqr2 = new FlxSprite(0, 0).loadGraphic(Paths.image('render square'));
-		renderSqr2.setPosition(nameTag2.x - renderSqr2.width + 185, nameTag2.y - nameTag2.height/2 - renderSqr2.height/2 - 15);
+		renderSqr2.setPosition(nameTag2.x - renderSqr2.width + 185, renderSqr1.y);
 		renderSqr2.color = p2Color;
 		renderSqr2.antialiasing = ClientPrefs.globalAntialiasing;
 		renderSqr2.visible = !ClientPrefs.hideHud;
@@ -1686,6 +1696,7 @@ class PlayState extends MusicBeatState
 		renderP1.cameras = [camHUD];
 		renderP2.cameras = [camHUD];
 
+		//renderSqr1.alpha = renderSqr2.alpha = renderP1.alpha = renderP2.alpha = 0.3;
 		healthBarBG.visible = healthBar.visible = iconP1.visible = iconP2.visible = false;
 
 		// if (SONG.song == 'South')
@@ -2976,7 +2987,7 @@ class PlayState extends MusicBeatState
 			trace(SONG.song.toLowerCase() + ' ' + song.musician + ' ' + song.isRemix);
 
 			songCard = new FlxTypedGroup<FlxSprite>();
-			songCard.cameras = [camHUD];
+			songCard.cameras = [camOther];
 	
 			var cardbg:FlxSprite = new FlxSprite(0, 50).loadGraphic(Paths.image('songcardbg'));
 			songCard.add(cardbg);
@@ -4580,8 +4591,8 @@ class PlayState extends MusicBeatState
 				function moveHominid():Void 
 				{
 					var x1:Int = FlxG.random.int(-400, 900);
-					var y1:Int = FlxG.random.int(-600, -150);
-					var scale:Float = FlxG.random.float(0.2, 0.5);
+					var y1:Int = FlxG.random.int(0, -150);
+					var scale:Float = FlxG.random.float(0.2, 0.6);
 
 					if (hominid.x > x1)
 						hominid.angle = -15;
@@ -4814,7 +4825,7 @@ class PlayState extends MusicBeatState
 					if(FlxTransitionableState.skipNextTransIn) {
 						CustomFadeTransition.nextCamera = null;
 					}
-					MusicBeatState.switchState(new StoryMenuState());
+					MusicBeatState.switchState(new MainMenuState());
 
 					// if ()
 					if(!ClientPrefs.getGameplaySetting('practice', false) && !ClientPrefs.getGameplaySetting('botplay', false)) {

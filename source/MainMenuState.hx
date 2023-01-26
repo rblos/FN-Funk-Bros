@@ -516,7 +516,32 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode' | 'smash':
-										MusicBeatState.switchState(new StoryMenuState());
+										//MusicBeatState.switchState(new StoryMenuState());
+										WeekData.reloadWeekFiles(true);
+										var weekFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[0]);
+										WeekData.setDirectoryFromWeek(weekFile);
+
+										trace(WeekData.weeksLoaded);
+
+										var songArray:Array<String> = [];
+										var leWeek:Array<Dynamic> = weekFile.songs;
+										for (i in 0...leWeek.length) {
+											songArray.push(leWeek[i][0]);
+										}
+										PlayState.storyPlaylist = songArray;
+										PlayState.isStoryMode = true;
+
+										CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
+										var curDifficulty = 2;
+										var diffic = CoolUtil.getDifficultyFilePath(curDifficulty);
+										if(diffic == null) diffic = '';
+
+										PlayState.storyDifficulty = curDifficulty;
+
+										PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+										PlayState.campaignScore = 0;
+										PlayState.campaignMisses = 0;
+										LoadingState.loadAndSwitchState(new PlayState(), true);
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
